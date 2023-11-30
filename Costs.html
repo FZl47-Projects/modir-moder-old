@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>هزینه آب،برق،گاز</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="./assets/vendors/bootstrap.min.css" />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./assets/styles/Costs.css" />
+    <!-- AXIOS PACKAGE -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body class="bg">
+    <div class="container-fluid container-admin">
+      <!-- START MAIN -->
+      <main class="main-admin">
+         <!-- start modal-add-cost -->
+         <div class="content-modal modal-add-cost">
+          <div class="inner-modal">
+            <form class="px-4 pt-2">
+              <div class="py-2">
+               <div class="item-cost-month">
+                 <div class="title-input">ماه</div>
+                 <jb-date-input label="date label" id="date"></jb-date-input>
+               </div>
+
+               
+                <textarea
+                  name="modal"
+                  class="input-modal"
+                  cols="30"
+                  rows="7"
+                  placeholder="توضیحات"
+                  id="description"
+                ></textarea>
+                <div class="item-cost-month">
+                  <div class="title-input">قیمت</div>
+                  <input type="text" placeholder="مبلغ" id="price">
+                </div>
+              </div>
+              <div class="btn-sabt btn-send-modal" id="submit">
+                <div>ثبت</div>
+                </div>
+            </form>
+          </div>
+        </div>
+        <!-- end modal-add-cost -->
+          <!-- START HEADER ADMIN -->
+          <header class="header-m-oprator">
+            <span class="back"><img src="./assets/images/back-icon.png"
+                    alt="icon"
+                    /></span>
+            <div class="title">
+                <h5>هزینه آب،برق،گاز</h5>
+            </div>
+            <div class="The-dividing-line"></div>
+           </header>
+        <!-- END HEADER ADMIN -->
+
+
+        <div class="content-main-admin">
+              <section class="contentt">
+                <!-- btn-add-cost-month -->
+                <div class="add-cost-month" id="add-cost-month">
+                  <span class="add">افزودن هزینه جدید </span>
+                  <span class="inner-cost-month">
+                    <img src="./assets/images/+.png" alt="">
+                  </span>
+                  
+                </div>
+                <!-- btn-add-cost-month -->
+                <div class="content-hazineh">
+                  <div class="row">
+                    <div class="month col-2">
+
+                    </div>
+                    <div class="title-row col-10">
+                      <div class="col-8">توضیحات </div>
+                      <div class="col-4">قیمت </div>
+                      
+                    </div>
+                  </div>
+                  <!-- the every month -->
+                  <span id="record">
+                  
+                  <!-- the every month -->
+                </span>
+
+                </div>
+              </section>
+              
+        </div>
+      </main>
+      <!-- START MAIN -->
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/jb-date-input/dist/JBDateInput.umd.js"></script>
+       <!-- PERSIAN TOOLS PACKAGE -->
+       <script
+       src="https://cdn.jsdelivr.net/npm/@persian-tools/persian-tools/build/persian-tools.umd.js"></script>
+    <!--BOOTSTRAP -->
+    <script src="../assets/vendors/bootstrap.min.js"></script>
+    <!-- MAIN JS -->
+    <script src="./assets/js/Cost.js" type="module"></script>
+   
+  </body>
+</html>

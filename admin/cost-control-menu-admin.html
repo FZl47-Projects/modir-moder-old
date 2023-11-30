@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>هزینه های منو</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="../assets/vendors/bootstrap.min.css" />
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="../assets/vendors/swiper.css" />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../assets/styles/cost-control-menu.css" />
+    <!-- AXIOS PACKAGE -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body class="bg">
+    <div class="container-fluid col-12" style="padding: 10px">
+      <!-- START MAIN -->
+      <main class="main-admin">
+        <!-- start modal-ticket -->
+        <div class="content-modal modal-special-offer">
+          <div class="inner-modal">
+            <form class="px-4 pt-2">
+              <span class="close" id="close-modal">
+                <img src="../assets/images/exit.png" alt="">
+
+              </span>
+              <div class="py-2">
+                <div class="moshavarah-content">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <img src="../assets/images/rezaei.jpg" alt="">
+                    </div>
+                    <div class="call col-12 col-md-6">
+                      <div class="name" style="font-size: 17px; margin:10px 0">مشاوره اختصاصی با مجید رضایی</div>
+                      <div class="inner-call">
+                        <div class="social-media" >
+                          <div class="telegram">
+                            <span>شماره تماس:</span>
+                            <span><a href="tel:09198910694">09198910694</a></span>
+                          </div>
+                          <div class="instagram">
+                            <span>اینستاگرام:</span>
+                            <span class="instagram"><a href="https://Instagram.com/modiremodern.ir">modiremodern.ir</a></span>
+                          </div>
+                          <div class="telegram">
+                            <span>تلگرام:</span>
+                            <span class="telegram"><a href="https://t.me/@MajidRezaei1400">MajidRezaei1400@</a></span>
+                          </div>
+                         
+                        </div>
+                      </div>
+                      <div class="left">
+                        <div class="rezome">
+                         <div class="title"> سوابق تحصیلی</div>
+                         <div>کارشناسی مدیریت هتل داری(دانشگاه علمی کاربردی کیش)</div>
+                         <div>کاردانی مهمانداری خدمات اقامتی(دانشگاه علمی کاربردی کیش)</div>
+    
+                        <div class="title">سوابق کار حرفه ای</div>
+                        <div>مدیر کل مجموعه غذایی میثم خان کرمان</div>
+                        <div>مدیر غذا و نوشابه و عضو تیم راه هتل 5ستاره میراژ کیش</div>
+                        <div>مدیر اجرایی و راه انداز مجتمع گردشگری هفت دریا در شیراز</div>
+                        <div>مدیر غذا و نوشابه هتل اسپیناس پالالس تهران</div>
+          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+        <!-- start modal-ticket -->
+        <!-- START HEADER ADMIN -->
+        <!-- START HEADER ADMIN -->
+        <header class="header-m-oprator">
+          <span class="back"><img src="./assets/images/back-icon.png" alt="icon"
+              /></span>
+          <div class="title">
+            <h5>هزینه های منو</h5>
+          </div>
+          <div class="The-dividing-line"></div>
+        </header>
+        <!-- END HEADER ADMIN -->
+        <!-- btn-cost-control-menu -->
+        <div class="btns-cost col-12 col-md-7" id="category">
+
+        </div>
+        <!-- btn-cost-control-menu -->
+
+        <div class="content-cost active" id="download ">
+          <span class="download col-8 col-md-2">
+            <div style="color: #fff">دانلود فایل مهندسی منو</div>
+            <span><img src="./assets/images/download.png" alt="" /></span>
+          </span>
+          <div class="title-cost-menu">فرم مهندسی منو</div>
+
+          <div class="input-menu">
+            <div class="p-2">
+              <div class="input-item ">
+                <div class="title">
+                  هزینه برای هر پرس غذا
+                </div>
+                <input type="text" class="input-cost" id="costFood" value="35">
+              </div>
+            </div>
+            <div class="p-2">
+            <div class="input-item  ">
+              <div class="title">
+                درصد سود
+              </div>
+              <input type="text" class="input-cost" id="darsadSood" value="35">
+            </div>
+            </div>
+            <div class="sabt-input p-2" id="submitDarsad">
+              <span>ثبت تغییرات</span>
+            </div>
+          </div>
+
+          <section class="contaner-cost-one">
+            <div class="one"></div>
+            <div class="col-12 Engineering-menu">
+              <table style="width: 100%">
+                <!-- title-table -->
+                <tr>
+                  <th>غذا</th>
+                  <th>
+                    قیمت تمام شده<br />
+                    (فود کاست)
+                  </th>
+                  <th>هزینه برای هر پرس غذا(تولید،اجاره،نیروی انسانی،قابل کنترل،غبر قابل کنترل و...)
+                  </th>
+                  <th>هزینه کل(هرپرس غذا)</th>
+                  <th>درصد<br />
+                    سود
+                  </th>
+                  <th>قیمت تمام شده(سود+هزینه)</th>
+                  <th>قیمت قابل ارائه به مشتری(درج در منو)</th>
+                  <th>سود هر آیتم</th>
+                  <th>فود کاست</th>
+                  <th>تعداد فروخته شده</th>
+                  <th>فروش کل</th>
+                  <th>هزینه کل هر آیتم</th>
+                  <th>سود کل هر آیتم</th>
+                  <th>طبقه سود هر آیتم</th>
+                  <th>طبقه آمیخته منو</th>
+                  <th>طبقه بندی اقلام منو</th>
+                  <th>درصد شاخص محبوبیت</th>
+                </tr>
+                <!-- title-table -->
+                <tbody id="row">
+
+                </tbody>
+                <!-- row-table -->
+                <tr class="all" id="all">
+
+                </tr>
+                <!-- <tr class="row-table" id="row"></tr> -->
+
+                <!-- rows miyangin-sod -->
+
+                <!-- rows miyangin-sod -->
+              </table>
+
+            </div>
+            <!-- avrage items -->
+            <div class="Average col-12 col-md-4">
+              <div class="Average-item col-12">
+                <div class="col-6 title">میانگین سود هر آیتم</div>
+                <div class="col-6 moment" id="sood"></div>
+              </div>
+              <div class="Average-item col-12">
+                <div class="col-6 title">درصد سهم هر آیتم</div>
+                <div class="col-6 moment" id="sahm"></div>
+              </div>
+            </div>
+            <!-- avrage items -->
+
+            <!-- special offer -->
+            <div class="special-offer-box col-12 col-md-2">
+              <div class="title">پیشنهاد ویژه</div>
+              <div class="special-offer" id="special-offer">مشاوره اختصاصی</div>
+            </div>
+            <!-- special offer -->
+            <!-- add-food -->
+            <div class="add-food-item">
+              <span id="add">اضافه کردن غذا</span>
+            </div>
+            <!-- add-food -->
+            <!-- btn-sabt -->
+            <div id="edit" class="btnnahayisabt">
+              <div class="btnsabttaghirat" style="font-size: 600;">
+                <span>ثبت تغییرات</span>
+              </div>
+              <div class="diviler-up"></div>
+            </div>
+            <!-- btn-sabt -->
+          </section>
+        </div>
+        <div class="content-cost">
+          <span class="download col-8 col-md-2">
+            <div style="color: #fff">دانلود فایل مهندسی منو</div>
+            <span><img src="../assets/images/download.png" alt="" /></span>
+          </span>
+          <div class="title-cost-menu">فرم مهندسی منو</div>
+
+
+        </main>
+        <!-- START MAIN -->
+      </div>
+
+      <!--BOOTSTRAP -->
+      <script src="../assets/vendors/bootstrap.min.js"></script>
+
+      <!-- SWIPER -->
+      <script src="../assets/vendors/swiper.js"></script>
+
+      <!-- MAIN JS -->
+      <script src="../assets/js/admin/cost-control-menu-admin.js" type="module"></script>
+      <script type="module" src="../assets/js/back.js" type="module"></script>
+    </body>
+  </html>

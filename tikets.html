@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تیکت ها</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="./assets/vendors/bootstrap.min.css" />
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="./assets/vendors/swiper.css" />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./assets/styles/tiket_user.css" />
+
+    <!-- AXIOS PACKAGE -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body class=" bg">
+
+    <div class="container-fluid container-admin">
+
+        <main class="main-admin">
+            <header class="header-m-oprator">
+                <span class="back"><img src="./assets/images/back-icon.png"
+                        alt="icon"
+                        /></span>
+                <div class="title">
+                    <h5>تیکت ها</h5>
+                </div>
+                <div class="The-dividing-line"></div>
+               </header>
+            <!-- START CONTENT-ITMES   -->
+            <section class="content-items">
+              <div class="items-content old ">
+                <!-- START CONTENT  -->
+                <section class="content-items ">
+                  <div class="items-ersal w-100 d-flex flex-wrap" id="row">
+                  
+                   
+                  </div>
+                </section>
+                <!-- END CONTENT -->
+              </div>
+            </section>
+            <!-- END CONTENT-ITMES   -->
+            <div class="btn-ersal btn-modal-1">
+             ارسال تیکت جدید
+            </div>
+
+             <!-- START MODAL -->
+             <div class="content-modal modal-ticket">
+                <div class="inner-modal">
+                  <form class="px-4 pt-2">
+                    <div class="py-2">
+                      <div class="name">reza</div>
+                      <div class="title">
+                        asdnfaadfa
+                      </div>
+                      <textarea name="modal" class="input-modal" cols="30" rows="7" placeholder="پاسخ تیکت"></textarea>
+                    </div>
+                    <div class="btns-modal">
+                      <div class="btn-modal col-6">
+                        <span class="btn-send-modal" onclick="sendTicket(5)">ارسال</span>
+                      </div>
+                      <div class="btn-modal close-modal-adamtaeid col-6">
+                        <span>لغو</span>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- END MODAL -->
+  
+        </main>
+     
+    </div>
+    <!-- SWIPER -->
+  
+    <script type="module" src="./assets/js//tickets.js"></script>
+    <script type="module" src="./assets/js/back.js" type="module"></script>
+  </body>
+</html>

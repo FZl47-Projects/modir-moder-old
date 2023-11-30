@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>غذاها</title>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="../assets/vendors/bootstrap.min.css" />
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="../assets/vendors/swiper.css" />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../assets/styles/kharid-eshterak-admin.css" />
+
+    <!-- AXIOS PACKAGE -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body class=" bg">
+
+    <div class="container-fluid container-admin">
+      <main class="main-admin">
+
+           <!-- start modal-add-edit-pakage -->
+           <div class="content-modal modal-add-edit-pakage">
+            <div class="inner-modal">
+              <form class="px-4 pt-2">
+                <div class="py-2">
+                 <div class="item-cost-month">
+                   <div class="title-input">نام پکیج</div>
+                   <input type="text" placeholder="نام" id="name">
+                 </div>
+                  <textarea
+                    name="modal"
+                    class="input-modal"
+                    cols="30"
+                    rows="7"
+                    id="description"
+                    placeholder="توضیحات"
+                  ></textarea>
+                  <div class="item-cost-month">
+                    <div class="title-input">قیمت(تومان)</div>
+                    <input type="text" placeholder="100000" id="price">
+                  </div>
+                  <div class="item-cost-month">
+                    <div class="title-input">تخفیف(درصد)</div>
+                    <input type="text" placeholder="100" id="discount">
+                  </div>
+                </div>
+                <div class="btn-sabt btn-send-modal" id="addsubmit">
+                  <div>ثبت</div>
+                  </div>
+              </form>
+            </div>
+           </div>
+          <!-- end modal-add-edit-pakage -->
+          <!-- start modal-edit-pakage -->
+          <span id="edit">
+         
+        </span>
+
+
+         <!-- START HEADER ADMIN -->
+         <header class="header-m-oprator">
+          <span class="back"><img src="../assets/images/back-icon.png"
+                  alt="icon"
+                  /></span>
+          <div class="title">
+              <h5>خرید اشتراک</h5>
+          </div>
+          <div class="The-dividing-line"></div>
+         </header>
+      <!-- END HEADER ADMIN -->
+        <section class="food-category">
+          <div class="row g-0" id="pakage">
+          
+         </div>
+
+         
+        </section>
+        <!-- btn-ghimat-nahayi -->
+        <div class="btnnahayi" id="add-pakage">
+            <span>افزودن پکیج جدید</span>
+           </div>
+         </div>
+       <!-- btn-ghimat-nahayi -->
+        
+
+      </main>
+     
+    </div>
+    <!-- SWIPER -->
+<script src="../assets/js/admin/kharid-eshterak-admin.js" type="module"></script>
+<script type="module" src="../assets/js/back.js"></script>
+
+  </body>
+</html>

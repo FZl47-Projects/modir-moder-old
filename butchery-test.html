@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>تست قصابی</title>
+        <!-- BOOTSTRAP -->
+        <link rel="stylesheet" href="./assets/vendors/bootstrap.min.css" />
+        <!-- SWIPER -->
+        <link rel="stylesheet" href="./assets/vendors/swiper.css" />
+
+        <!-- MAIN CSS -->
+        <link rel="stylesheet" href="./assets/styles/butchery-test.css">
+        <link rel="stylesheet" href="./assets/styles/loader.css">
+
+        <!-- AXIOS PACKAGE -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </head>
+
+    <body class="bg">
+        <div class="loading">
+            <span class="loader"></span>
+          </div>
+        <div class="container-fluid container-admin test" style="padding:10px ;">
+            <!-- START MAIN -->
+            <main class="main-admin">
+                <!-- START HEADER ADMIN -->
+                <!-- START HEADER ADMIN -->
+                <header class="header-m-oprator">
+                    <span class="back" onclick="location.href='./Raw-material.html'"><img src="./assets/images/back-icon.png"
+                            alt="icon"
+                            /></span>
+                    <div class="title">
+                        <h5>هزینه های منو</h5>
+                    </div>
+                    <div class="The-dividing-line"></div>
+                </header>
+                <!-- END HEADER ADMIN -->
+                <div class="category-tables-butchery-test">
+                    <section class="tablee col-12 col-md-9" id="moshakhasat-omomi-jadval">
+                        <div class="title-table">مشخصات عمومی محصول</div>
+                         
+                            <div class="row-table">
+                                <div class="col-6 p-2 column-item border-l"
+                                    id="name-base-material">نام مواد اولیه</div>
+                                <div class="col-5 p-2 column-item border-l"
+                                    id="name" >
+                                    <input type="text" id="rawname" value="">
+                                </div>
+                                <div class="col-1 p-2 column-item"
+                                    id="Raw-material-price">
+                                   
+                                </div>
+                                
+                            </div>
+                            <div class="row-table border-t">
+                                <div class="col-6 p-2 column-item  border-l"
+                                    id="Raw-material-code" >مورد استفاده در محصول</div>
+                                <div class="col-5 p-2 column-item  border-l"
+                                    id="Raw-material-name">
+                                  <input id="nameProduct" type="text" >
+                                </div>
+                                <div class="col-1 p-2 column-item "
+                                    id="Raw-material-price" >
+                                   
+                                </div>
+                                
+                            </div>
+                            <div class="row-table border-t">
+                                <div class="col-6 p-2 column-item  border-l"
+                                    id="Raw-material-code">مقدار استاندارد در هر پرس خام</div>
+                                <div class="col-5 p-2 column-item  border-l"
+                                    id="Raw-material-name" >
+                                   <input type="text" id="rawValue" value="0">
+                                </div>
+                                <div class="col-1 p-2 column-item"
+                                    id="Raw-material-price">
+                                   kg
+                                </div>
+                                
+                            </div>
+                               <div class="row-table border-t">
+                                <div class="col-6 p-2 column-item  border-l"
+                                    id="Raw-material-code">مقدار استاندارد در هر پرس پخته</div>
+                                <div class="col-5 p-2 column-item  border-l"
+                                    id="Raw-material-name" >
+                                    <input type="text" id="cookedValue" value="0">
+                                </div>
+                                <div class="col-1 p-2 column-item"
+                                    id="Raw-material-price">
+                                   kg
+                                </div>
+                                
+                            </div>
+                            <div class="row-table border-t">
+                                <div class="col-6 p-2 column-item  border-l"
+                                    id="Raw-material-code">قیمت خریداری شده</div>
+                                <div class="col-5 p-2 column-item  border-l"
+                                    id="Raw-material-name" >
+                                    <input type="text" id="Oldprice" value="">
+                                </div>
+                                <div class="col-1 p-2 column-item"
+                                    id="Raw-material-price">
+                                   
+                                </div>
+                                
+                            </div>
+                            <div class="row-table border-t">
+                                <div class="col-6 p-2 column-item  border-l"
+                                    id="Raw-material-code">قیمت در هر کیلوگرم/عدد</div>
+                                <div class="col-5 p-2 column-item  border-l"
+                                    id="Raw-material-name" >
+                                    <input type="text" id="price" value="2500000">
+                                </div>
+                                <div class="col-1 p-2 column-item"
+                                    id="Raw-material-price">
+                                   
+                                </div>
+                                
+                            </div>
+                            <div class="row-table border-t">
+                                <div class="col-6 p-2 column-item  border-l"
+                                    id="Raw-material-code">وزن تحویلی</div>
+                                <div class="col-5 p-2 column-item  border-l"
+                                    id="Raw-material-name" >
+                                    <input type="text" value="0" id="anbar">
+                                </div>
+                                <div class="col-1 p-2 column-item"
+                                    id="Raw-material-price">
+                                   kg
+                                </div>
+                                
+                            </div>
+                    </section>
+                    <section class="tablee col-12 col-md-9" id="oft-vazn-jadval">
+                        <div class="title-table">افت وزنی محصول حین تمیز کردن</div>
+                            <div class="row-table">
+                                <div class="col-4 p-2 column-item border-l"
+                                    id="name-base-material">وزن صادره از انبار</div>
+                                <div class="col-3 p-2 column-item border-l"
+                                    id="name" >
+                                    <input type="tell" id="anbar-2" disabled value="0">
+                                </div>
+                                <div class="col-1 p-2 column-item border-l"
+                                    id="Raw-material-price">
+                                   kg
+                                </div>
+                                <div class="col-3 p-2 column-item border-l"
+                                    id="Raw-material-price">
+                                    <input type="text" disabled value="100">
+                                </div>
+                                <div class="col-1 p-2 column-item"
+                                    id="Raw-material-price">
+                                   %
+                                </div>
+                                
+                            </div>
+                            <div class="row-table border-t">
+                                <div class="col-4 p-2 column-item border-l"
+                                    id="name-base-material">کاهش وزن در اثر تمیز کردن(بدون استفاده)</div>
+                                <div class="col-3 p-2 column-item border-l"
+                                    id="name" >
+                                    <input type="text" value="0" id="bedon" >
+                                </div>
+                                <div class="col-1 p-2 column-item border-l"
+                                    id="Raw-material-price">
+                                   kg
+                                </div>
+                                <div class="col-3 p-2 column-item border-l"
+                                    id="Raw-material-price">
+                                    <input type="text" value="0" disabled id="darsad-bedon">
+                                </div>
+                                <div class="col-1 p-2 column-item"
+                                    id="Raw-material-price">
+                                   %
+                                </div>
+                                
+                            </div>
+                            <div class="row-table border-t">
+                                <div class="col-4 p-2 column-item border-l"
+                                    id="name-base-material">کاهش وزن در اثر تمیز کردن(قابل استفاده)</div>
+                                <div class="col-3 p-2 column-item border-l"
+                                    id="name" >
+                                    <input type="text" value="0" id="ghabel">
+                                </div>
+                                <div class="col-1 p-2 column-item border-l"
+                                    id="Raw-material-price">
+                                   kg
+                                </div>
+                                <div class="col-3 p-2 column-item border-l"
+                                    id="Raw-material-price">
+                                    <input type="text" value="0" disabled id="darsad-ghabel" >
+                                </div>
+                                <div class="col-1 p-2 column-item"
+                                    id="Raw-material-price">
+                                   %
+                                </div>
+                                
+                            </div>
+                            <div class="row-table border-t">
+                                <div class="col-4 p-2 column-item border-l"
+                                    id="name-base-material">وزن تمیز شده(قابل استفاده)</div>
+                                <div class="col-3 p-2 column-item border-l"
+                                    id="name" >
+                                    <input type="text" value="0" disabled id="result">
+                                </div>
+                                <div class="col-1 p-2 column-item border-l"
+                                    id="Raw-material-price">
+                                   kg
+                                </div>
+                                <div class="col-3 p-2 column-item border-l"
+                                    id="Raw-material-price">
+                                    <input type="text" value="0" disabled id="darsad-result" >
+                                </div>
+                                <div class="col-1 p-2 column-item"
+                                    id="Raw-material-price">
+                                   %
+                                </div>
+                                
+                            </div>
+                    </section>
+
+
+                    <section class="tablee col-12 col-md-9" id="oft-vazn-pokht-jadval">
+                        <div class="title-table">افت وزنی محصول در خلال پخت</div>
+                            <div class="row-table">
+                                <div class="col-4 p-2 column-item border-l"
+                                    id="name-base-material">وزن تمیز شده (قابل خوراک)</div>
+                                <div class="col-3 p-2 column-item border-l"
+                                    id="name" >
+                                    <input type="text" value="0" disabled id="tamiz">
+                                </div>
+                                <div class="col-1 p-2 column-item border-l"
+                                    id="Raw-material-price">
+                                   kg
+                                </div>
+                                <div class="col-3 p-2 column-item border-l"
+                                    id="Raw-material-price">
+                                    <input type="text" value="0" disabled id="darsad-tamiz">
+                                </div>
+                                <div class="col-1 p-2 column-item"
+                                    id="Raw-material-price">
+                                   %
+                                </div>
+                                
+                            </div>
+                            <div class="row-table border-t">
+                                <div class="col-4 p-2 column-item border-l"
+                                    id="name-base-material">افت وزن در خلال پخت</div>
+                                <div class="col-3 p-2 column-item border-l"
+                                    id="name" >
+                                    <input type="text" value="0" id="pokht">
+                                </div>
+                                <div class="col-1 p-2 column-item border-l"
+                                    id="Raw-material-price">
+                                   kg
+                                </div>
+                                <div class="col-3 p-2 column-item border-l"
+                                    id="Raw-material-price">
+                                    <input type="text" value="0" disabled id="darsad-pokht">
+                                </div>
+                                <div class="col-1 p-2 column-item"
+                                    id="Raw-material-price">
+                                   %
+                                </div>
+                                
+                            </div>
+                            <div class="row-table border-t">
+                                <div class="col-4 p-2 column-item border-l"
+                                    id="name-base-material">وزن قابل فروش(پخته شده)</div>
+                                <div class="col-3 p-2 column-item border-l"
+                                    id="name" >
+                                    <input type="text"  value="0" id="forosh">
+                                </div>
+                                <div class="col-1 p-2 column-item border-l"
+                                    id="Raw-material-price">
+                                   kg
+                                </div>
+                                <div class="col-3 p-2 column-item border-l"
+                                    id="Raw-material-price">
+                                    <input type="text" value="0" disabled id="darsad-forosh">
+                                </div>
+                                <div class="col-1 p-2 column-item"
+                                    id="Raw-material-price">
+                                   %
+                                </div>
+                                
+                            </div>
+                            
+                    </section>
+
+                    <section class="tablee col-12 col-md-9" id="nesbathaye-mohasebati-jadval">
+                        <div class="title-table">نسبت های محاسباتی تست بازه</div>
+                            <div class="row-table">
+                                <div class="col-6 p-2 column-item border-l"
+                                    id="name-base-material">نسبت مقدار قابل خوراک به وزن اصلی (برحسب درصد)</div>
+                                <div class="col-5 p-2 column-item border-l"
+                                    id="name" >
+                                    <input type="text" disabled id="nesbat-khorak" value="0">
+                                </div>
+                                <div class="col-1 p-2 column-item"
+                                    id="Raw-material-price">
+                                   
+                                </div>
+                                
+                            </div>
+                            <div class="row-table border-t">
+                                <div class="col-6 p-2 column-item  border-l"
+                                    id="Raw-material-code" >نسبت مقدار پخته شده به وزن اصلی (برحسب درصد)</div>
+                                <div class="col-5 p-2 column-item  border-l"
+                                    id="Raw-material-name">
+                                  <input type="text" disabled value="0" id="nesbat-pokhteh">
+                                </div>
+                                <div class="col-1 p-2 column-item "
+                                    id="Raw-material-price" >
+                                   
+                                </div>
+                                
+                            </div>
+                            <div class="row-table border-t">
+                                <div class="col-6 p-2 column-item  border-l"
+                                    id="Raw-material-code">هزینه مقدار قابل استفاده خام(هر کیلوگرم/عدد به تومان) </div>
+                                <div class="col-5 p-2 column-item  border-l"
+                                    id="Raw-material-name" >
+                                   <input type="text" disabled id="price-kham" value="0">
+                                </div>
+                                <div class="col-1 p-2 column-item"
+                                    id="Raw-material-price">
+                                   kg
+                                </div>
+                                
+                            </div>
+                               <div class="row-table border-t">
+                                <div class="col-6 p-2 column-item  border-l"
+                                    id="Raw-material-code">هزینه مقدار قابل استفاده پخته(هر کیلوگرم/عدد به تومان) </div>
+                                <div class="col-5 p-2 column-item  border-l"
+                                    id="Raw-material-name" >
+                                    <input type="text" disabled id="price-pokhteh" value="0">
+                                </div>
+                                <div class="col-1 p-2 column-item"
+                                    id="Raw-material-price">
+                                   kg
+                                </div>
+                                
+                            </div>
+                            <div class="row-table border-t">
+                                <div class="col-6 p-2 column-item  border-l"
+                                    id="Raw-material-code">هزینه مقدار قابل استفاده خام هر پرس به تومان</div>
+                                <div class="col-5 p-2 column-item  border-l"
+                                    id="Raw-material-name" >
+                                    <input type="text" disabled id="price-pors-kham" value="0">
+                                </div>
+                                <div class="col-1 p-2 column-item"
+                                    id="Raw-material-price">
+                                   kg
+                                </div>
+                                
+                            </div>
+                            <div class="row-table border-t">
+                               <div class="col-6 p-2 column-item  border-l"
+                                   id="Raw-material-code">هزینه مقدار قابل استفاده پخته هر پرس به تومان</div>
+                               <div class="col-5 p-2 column-item  border-l"
+                                   id="Raw-material-name" >
+                                   <input type="text" disabled id="price-pors-pokhteh" value="0">
+                               </div>
+                               <div class="col-1 p-2 column-item"
+                                   id="Raw-material-price">
+                                  kg
+                               </div>
+                               
+                           </div>
+                            <div class="row-table border-t">
+                                <div class="col-6 p-2 column-item  border-l"
+                                    id="Raw-material-code">تعداد مورد استفاده(خام)   </div>
+                                <div class="col-5 p-2 column-item  border-l"
+                                    id="Raw-material-name" >
+                                    <input type="text" value="0" disabled id="kham-num">
+                                </div>
+                                <div class="col-1 p-2 column-item"
+                                    id="Raw-material-price">
+                                   
+                                </div>
+                                
+                            </div>
+
+                            <div class="row-table border-t">
+                                <div class="col-6 p-2 column-item  border-l"
+                                    id="Raw-material-code">تعداد مورد استفاده(پخته) </div>
+                                <div class="col-5 p-2 column-item  border-l"
+                                    id="Raw-material-name" >
+                                    <input type="text" value="0" disabled id="pokhteh-num">
+                                </div>
+                                <div class="col-1 p-2 column-item"
+                                    id="Raw-material-price">
+                                   kg
+                                </div>
+                                
+                            </div>
+                    </section>
+
+               
+                </div>
+               
+                
+
+              
+            </main>
+            <!-- START MAIN -->
+        </div>
+
+
+        <!--BOOTSTRAP -->
+        <script src="./assets/vendors/bootstrap.min.js"></script>
+        <script src="./assets/js/butchery-test.js" type="module"></script>
+
+
+    </body>
+</html>

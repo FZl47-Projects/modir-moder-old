@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>لیست کاربران</title>
+        <!-- BOOTSTRAP -->
+        <link rel="stylesheet" href="../assets/vendors/bootstrap.min.css" />
+        <!-- SWIPER -->
+        <link rel="stylesheet" href="../assets/vendors/swiper.css" />
+
+        <!-- MAIN CSS -->
+        <link rel="stylesheet" href="../assets/styles/list-karbaran.css" />
+        <!-- AXIOS PACKAGE -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </head>
+
+    <body class="bg">
+        <div class="container-fluid container-admin">
+            <!-- START MAIN -->
+            <main class="main-admin">
+                <!-- START HEADER ADMIN -->
+                <header class="header-m-oprator">
+                    <span class="back"><img src="../assets/images/back-icon.png" alt="icon"
+                            /></span>
+                    <div class="title">
+                        <h5>لیست کاربران</h5>
+
+                    </div>
+                </header>
+                <span id="modal">
+                
+                
+            </span>
+                <!-- END HEADER ADMIN -->
+
+                <div class="content-main-admin">
+
+                    <!-- START SEARCH-BOX -->
+                    <div class="search-box">
+                        <span><img src="../assets/images/search-icon.png"
+                                alt="icon"></span>
+                        <input type="text" name="search" id="search"
+                            placeholder="جستجو در کاربران" />
+                    </div>
+                    <!-- END SEARCH-BOX -->
+
+                    <!-- START CONTENT sale -->
+                    <section class="content">
+                        <div class="title-row col-12">
+                            <div class="col-4">نام کاربر</div>
+                            <div class="col-4">شماره تلفن </div>
+                            <div class="col-4"> شهر </div>
+                        </div>
+                        <div class="user-list-content col-12" id="user">
+                          
+                        </div>
+                    </section>
+                    <!-- END CONTENT -->
+                </div>
+            </main>
+            <!-- START MAIN -->
+        </div>
+
+        <!--BOOTSTRAP -->
+        <script src="../assets/vendors/bootstrap.min.js"></script>
+
+        <!-- SWIPER -->
+        <script src="../assets/vendors/swiper.js"></script>
+
+        <!-- MAIN JS -->
+        <script src="../assets/js/admin/list-karbaran.js" type="module"></script>
+        <script type="module" src="../assets/js/back.js"></script>
+    </body>
+</html>

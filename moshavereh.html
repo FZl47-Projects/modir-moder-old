@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>لیست کاربران</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="../assets/vendors/bootstrap.min.css" />
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="../assets/vendors/swiper.css" />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../assets/styles/moshavereh.css" />
+    <!-- AXIOS PACKAGE -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body class="bg">
+   
+
+    <!-- START HEADER ADMIN -->
+    <header class="header-m-oprator">
+      <span class="back"><img src="./assets/images/back-icon.png"
+              alt="icon"
+              /></span>
+      <div class="title">
+          <h5>مشاوره با ما</h5>
+      </div>
+      <div class="The-dividing-line"></div>
+  </header>
+  <!-- END HEADER ADMIN -->
+
+    <!-- START MAIN -->
+    <main class="main-admin">
+      <!-- START forms -->
+      <div class="row up">
+        <div class="col-12 col-md-4 ">
+          <section class="input-category">
+            <div class="title" >
+              موضوع مشاوره
+            </div>
+            <input type="text" id="title" placeholder="مثال : راهنمایی برای راه اندازی کافی شاپ...">
+    
+          </section>
+        </div>
+        <div class="col-12 col-md-4">
+          <section class="input-category">
+            <div class="title" >
+              شغل
+            </div>
+            <input type="text" id="jobs" placeholder="شغل خود را بنویسید">
+    
+          </section>
+        </div>
+        <div class="col-12 col-md-4">
+          <section class="input-category">
+            <div class="title">
+              موضوع مشاوره
+            </div>
+            <select name="brand" id="noe-moshavereh">
+              <option value="ip">حضوری</option>
+              <option value="ph">تلفنی</option>
+          </select>
+          </section>
+        </div>
+       </div>
+
+      <div class="row form-hozori active">
+        <div class="col-12 col-md-6 ">
+          <section class="input-category">
+            <div class="title">
+             شهر
+            </div>
+            <input type="text" id="city" placeholder="نام شهر"/>   
+    
+          </section>
+        </div>
+      </div>
+      <div class="row form-gheyrehozori">
+        <div class="col-12 col-md-6 ">
+          <section class="input-category">
+            <div class="title">
+              شماره تماس
+            </div>
+            <input type="text" placeholder="شماره تماس ">
+    
+          </section>
+        </div>
+       
+      </div>
+      <!-- end forms -->
+    
+
+
+
+
+<!-- start taghvim -->
+  <div class="category-down">
+  <div class="col-12 col-md-6" style="margin:
+    auto; margin-top: 50px;">
+    <div class="year-wrapper d-none">
+    </div>
+    
+
+    <div class="months">
+      <span class="month-hover month-letter month-letter-1" data-num="1">فروردین</span>
+      <span class="month-hover month-letter month-letter-2" data-num="2">اردیبهشت</span>
+      <span class="month-hover month-letter month-letter-3" data-num="3">خرداد</span>
+      <span class="month-hover month-letter month-letter-4" data-num="4">تیر</span>
+      <span class="month-hover month-letter month-letter-5" data-num="5">مرداد</span>
+      <span class="month-hover month-letter month-letter-6" data-num="6">شهریور</span>
+      <span class="month-hover month-letter month-letter-7" data-num="7">مهر</span>
+      <span class="month-hover month-letter month-letter-8" data-num="8">آبان</span>
+      <span class="month-hover month-letter month-letter-9" data-num="9">آذر</span>
+      <span class="month-hover month-letter month-letter-10" data-num="10">دی</span>
+      <span class="month-hover month-letter month-letter-11" data-num="11">بهمن</span>
+      <span class="month-hover month-letter month-letter-12" data-num="12">اسفند</span>
+    </div>
+
+    <div class="days">
+      <ul class="weeks">
+        <li class="test" >شنبه</li>
+        <li class="test" >یکشنبه</li>
+        <li class="test" >دوشنبه</li>
+        <li class="test" >سه شنبه</li>
+        <li class="test" >چهارشنبه</li>
+        <li class="test" >پنجشنبه</li>
+        <li class="test" >جمعه</li>
+        <div class="clearfix"></div>
+      </ul>
+    </div>
+    <!-- start taghvim1401 -->
+    <div class="num-dates"></div>
+    <!-- start taghvim1401 -->
+  </div>
+<!-- btn-moshavereh bedon nobat -->
+<div class="d-flex justify-content-center">
+  <button class="btn-bedon-nobat">مشاوره بدون نوبت</button>
+</div>
+<!-- btn-moshavereh bedon nobat -->
+    
+
+
+  </div>
+
+  <!-- btn sabt -->
+  <div class="btnnahayisabt" style="cursor: pointer;" id="submit">
+    <div class="btnsabttaghirat">
+        <span>ثبت تغییرات</span>
+    </div>
+    <div class="diviler-up"></div>
+</div>
+<!-- btn sabt -->
+  
+
+    </main>
+
+
+    <!--BOOTSTRAP -->
+    <script src="../assets/vendors/bootstrap.min.js"></script>
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/admin/js/calendarObject.js"></script>
+    <script src="./assets/js/admin/js/app.js" type="module"></script>
+    <script src="./assets/js/moshaveteh.js"></script>
+    
+  </body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ورود و ثبت نام </title>
+        <!-- BOOTSTRAP -->
+        <link rel="stylesheet" href="./assets/vendors/bootstrap.min.css" />
+        <!-- SWIPER -->
+        <link rel="stylesheet" href="./assets/vendors/swiper.css" />
+
+        <!-- MAIN CSS -->
+        <link rel="stylesheet" href="./assets/styles/sign-up.css">
+        <!-- AXIOS PACKAGE -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+            integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="crossorigin="anonymous"
+            referrerpolicy="no-referrer"></script>
+    </head>
+
+    <body>
+        <div class="container-admin">
+            <!-- START MAIN -->
+            <main class=" container-form">
+                
+                    <div class="form-content">
+                      <div class="right-form col-12 col-md-6">
+                          <div class="logo-form d-none">
+                            <img src="./assets/images/logo modir.png" alt="">
+                            <div class="title" style="color:#fff; margin-top:10px;">اصول رستورانداری</div>
+                          </div>
+                       </div>
+
+
+                        <div class="left-form col-12 col-md-6" >
+                          <div class="forms-content form-content-signup">
+                              <!-- formlogin -->
+                            <div class="contenttt form-login active">
+                                <div class="logo-conent-form">
+                                    <img src="./assets/images/logo modir.png" alt="">
+                                </div>
+                                <div class="title-content-form">اصول رستوران داری</div>
+                                <div class="forms">
+
+                                    <form class="form form-signup">
+                                        <h3 class="title">ثبت نام</h3>
+                                        <div>
+                                            <div class="group-form ">
+                                                <input type="text" id="name-signUp" name="name">
+                                                <label for="name-signUp">:نام و نام خانوادگی</label>
+                                            </div>
+                                            <small> </small>
+                                        </div>
+                                        <div>
+                                            <div class="group-form ">
+                                                <input type="text" id="notioanalCode-signUp" name="notioanalCode">
+                                                <label for="notioanalCode-signUp"> :شهر </label>
+                                            </div>
+                                            <small></small>
+                                        </div>
+                                        <div>
+                                            <div class="group-form ">
+                                                <input type="text" id="resturant_name" name="notioanalCode">
+                                                <label for="notioanalCode-signUp"> :نام رستوران  </label>
+                                            </div>
+                                            <small></small>
+                                        </div>
+                                        <div>
+                                            <div class="group-form">
+                                                <input type="password" id="password-signUp" name="password">
+                                                <label for="password-signUp">:رمز عبور</label>
+                                            </div>
+                                            <small></small>
+                
+                                        </div>
+                                        <div>
+                
+                                            <div class="group-form">
+                                                <input type="password" id="confirmPassword-signUP" name="confirmPassword">
+                                                <label for="confirmPassword-signUP">:تکرار رمز عبور</label>
+                                            </div>
+                                            <small></small>
+                
+                                        </div>
+                                       
+                
+                
+                
+                                        <button type="submit" class="btn-submit">ثبت نام</button>
+                                        <div class="d-flex justify-content-center align-items-center py-3 form-text-3 ">
+                                            <a href="./login.html">ورود</a>
+                                        </div>
+                                    </form>
+                
+                
+                                </div>
+    
+    
+                                 </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+            <!-- START MAIN -->
+        </div>
+
+        <!--BOOTSTRAP -->
+        <!-- SWEETALERT PACKAGE -->
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <!-- PERSIAN TOOLS PACKAGE -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@persian-tools/persian-tools/build/persian-tools.umd.js"></script>
+        <script src="./assets/vendors/bootstrap.min.js"></script>
+
+
+        <!-- MAIN JS -->
+        <script src="./assets/js/Services.js" type="module"></script>
+        <script src="./assets/js/sign-up.js" type="module" ></script>
+       
+
+    </body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>خانه</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="./assets/vendors/bootstrap.min.css" />
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="./assets/vendors/swiper.css" />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./assets/styles/home.css" />
+
+    <!-- AXIOS PACKAGE -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body class="bg">
+    <!-- START MENU-FIXED-RIGHT -->
+    <nav class="menu-fixed-right col-2">
+      <div class="inner-menu-fixed-right">
+        <div class="up-menu">
+          <div class="profile">
+            <img src="./assets/images/profile2.png" alt="">
+            <div class="Profile details">
+              <div class="name">
+                مجید رضایی
+              </div>
+              <div class="city">
+                کرمان
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="content-menu">
+          <ul class="list">
+            <li class="item-menu">
+              <a href="./index.html" class="active">
+                <span
+                  ><img
+                    src="./assets/images/icon/home-d.png"
+                    alt="icon-menu"
+                /></span>
+                <span>خانه </span>
+                
+              </a>
+            </li>
+            <li class="item-menu">
+              <a href="./instruction.html">
+                <span
+                  ><img
+                    src="./assets/images/icon/article-d.png"
+                    alt="icon-menu"
+                /></span>
+                <span>آموزش ها</span>
+                
+              </a>
+            </li>
+            <li class="item-menu">
+              <a href="./foods.html">
+                <span
+                  ><img
+                    src="./assets/images/icon/food-d.png"
+                    alt="icon-menu"
+                /></span>
+                 <span> رسپی غذاها</span>
+                
+              </a>
+            </li>
+            <li class="item-menu">
+              <a href="./chat.html">
+                <span
+                  ><img
+                    src="./assets/images/icon/academy-d.png"
+                    alt="icon-menu"
+                /></span>
+                <span>آکادمی</span>
+                
+              </a>
+            </li>
+            <li class="item-menu">
+              <a href="./profile.html">
+                <span
+                  ><img
+                    src="./assets/images/account.png"
+                    alt="icon-menu"
+                /></span>
+                <span>پروفایل</span>
+              </a>
+            </li>
+             
+            <li class="item-menu">
+              <a href="./kharid-eshterak.html">
+                <span
+                  ><img
+                    src="./assets/images/icon/-dخرید اشتراک.png"
+                    alt="icon-menu"
+                /></span>
+                <span>خرید اشتراک</span>
+                
+              </a>
+            </li>
+            <li class="item-menu">
+              <a href="./cost-control-menu.html">
+                <span
+                  ><img
+                    src="./assets/images/icon/فرم مهندسی-d.png"
+                    alt="icon-menu"
+                /></span>
+                <span>فرم مهندسی منو</span>
+                
+              </a>
+            </li>
+           
+
+          </ul>
+        </div>
+        <div class="down-menu">
+          <div>
+            <img src="./assets/images/Group 2474.png" alt="">
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- END MENU-FIXED-RIGHT -->
+    <!-- START MENU-BOTTOM -->
+    <div class="menu-bottom">
+      <ul class="list-bottom">
+        <li class="item-menu">
+          <a href="index.html">
+            <span><img
+                src="./assets/images/home.png"
+                alt="icon-menu"
+                /></span>
+          </a>
+        </li>
+        <li class="item-menu">
+          <a href="instruction.html">
+            <span><img
+                src="./assets/images/academy.png"
+                alt="icon-menu"
+                /></span>
+          </a>
+        </li>
+        <li class="item-menu">
+          <a href="chat.html">
+            <span><img
+                src="./assets/images/Group 2250.png"
+                alt="icon-menu"
+                /></span>
+          </a>
+        </li>
+        <li class="item-menu">
+          <a href="foods.html">
+            <span><img
+                src="./assets/images/food.png"
+                alt="icon-menu"
+                /></span>
+          </a>
+        </li>
+        <li class="item-menu">
+          <a href="profile.html">
+            <span><img
+                src="./assets/images/account.png"
+                alt="icon-menu"
+                /></span>
+          </a>
+        </li>
+        <li class="item-menu">
+          <a href="kharid-eshterak.html">
+            <span><img
+                src="./assets/images/حقوق کارکنان.png"
+                alt="icon-menu"
+                /></span>
+          </a>
+        </li>
+        <li class="item-menu">
+          <a href="Staff-salaries.html">
+            <span><img
+                src="./assets/images/خرید اشتراک.png"
+                alt="icon-menu"
+                /></span>
+          </a>
+        </li>
+        <li class="item-menu">
+          <a href="cost-control-menu.html">
+            <span><img
+                src="./assets/images/فرم مهندسی.png"
+                alt="icon-menu"
+                /></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- END MENU-BOTTOM -->
+    <div class="container-fluid col-md-10 bg">
+      <main class="main">
+        <section class="story-category">
+          <div class="inner-category-story" style="padding: 0px 10px;">
+            <!-- START ITEM-CATEGORY -->
+            <div class="swiper" id="slider-story">
+              <div class="swiper-wrapper" id="slide-item">
+                
+            
+              </div>
+            </div>
+          </div>
+        </section>
+
+<!--        
+        <div class="content-modal" id="modal-story-modirmodern">
+         
+          <div class="inner-modal">
+            <div class="content" style="width: 430px;border-radius: 20px;border:
+              0;">
+              <div class="col-3 btn-exit">
+                <img src="./assets/images/exit.png" alt="">
+              </div>
+              <div class="col-12">
+                <img style="width: 100%;height: 250px;"
+                  src="./assets/images/article.jpg">
+              </div>
+              <div class="pt-2 test">
+                <div class="col-12 px-4 py-2">
+                  <h2>عنوان استوری</h2>
+                </div>
+                <div class=" description col-12 px-4 py-2 des" style="font-size: 15px;">
+                  <span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                    چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                    روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط
+                    فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
+                    ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد
+                    گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد،
+                    تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+                    الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد،
+                </span>
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+     
+        <section class="story d-flex">
+          <div class="col-3 col-md-1 p-2">
+            <div class="story-item">
+              <img src="./assets/images/story.png" alt="">
+            </div>
+          </div>
+          <div class="col-3 col-md-1 p-2">
+            <div class="story-item">
+              <img src="./assets/images/story.png" alt="">
+            </div>
+          </div>
+          <div class="col-3 col-md-1 p-2">
+            <div class="story-item">
+              <img src="./assets/images/story.png" alt="">
+            </div>
+          </div>
+          <div class="col-3 col-md-1 p-2">
+            <div class="story-item">
+              <img src="./assets/images/story.png" alt="">
+            </div>
+          </div>
+          <div class="col-3 col-md-1 p-2">
+            <div class="story-item">
+              <img src="./assets/images/story.png" alt="">
+            </div>
+          </div>
+          <div class="col-3 col-md-1 p-2">
+            <div class="story-item">
+              <img src="./assets/images/story.png" alt="">
+            </div>
+          </div>
+          <div class="col-3 col-md-1 p-2">
+            <div class="story-item">
+              <img src="./assets/images/story.png" alt="">
+            </div>
+          </div>
+          <div class="col-3 col-md-1 p-2">
+            <div class="story-item">
+              <img src="./assets/images/story.png" alt="">
+            </div>
+          </div>
+          <div class="col-3 col-md-1 p-2">
+            <div class="story-item">
+              <img src="./assets/images/story.png" alt="">
+            </div>
+          </div>
+          <div class="col-3 col-md-1 p-2">
+            <div class="story-item">
+              <img src="./assets/images/story.png" alt="">
+            </div>
+          </div>
+          <div class="col-3 col-md-1 p-2">
+            <div class="story-item">
+              <img src="./assets/images/story.png" alt="">
+            </div>
+          </div>
+          <div class="col-3 col-md-1 p-2">
+            <div class="story-item">
+              <img src="./assets/images/story.png" alt="">
+            </div>
+          </div>
+        </section> -->
+
+        <section class="instruction">
+          <div class="col-md-7">
+            <div class="instruction-video">
+              <video id="poster" controls>
+
+              </video>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="instruction-des">
+              <div class="title-instruction-des">آموزش روزانه</div>
+              <div>
+                <p id="description">
+
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+        <section class="food-category">
+          <div class="title px-4">
+            <span>قیمت تمام شده هر پرس</span>
+            <a href="./foods.html">مشاهده همه</a>
+          </div>
+          <div class="row g-0" id="row">
+
+          </div>
+
+        </section>
+
+
+      </main>
+
+    </div>
+    <!-- SWIPER -->
+    <script src="./assets/vendors/swiper.js"></script>
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/index.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>افزودن غذا</title>
+        <!-- BOOTSTRAP -->
+        <link rel="stylesheet" href="../assets/vendors/bootstrap.min.css" />
+        <!-- SWIPER -->
+        <link rel="stylesheet" href="../assets/vendors/swiper.css" />
+
+        <!-- MAIN CSS -->
+        <link rel="stylesheet" href="./assets/styles/add-new-food.css" />
+
+        <!-- AXIOS PACKAGE -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </head>
+    <body class="bg">
+
+        <div class="container-fluid container-admin">
+            <main class="main-admin-addfood" style="padding-bottom: 120px;">
+                <!-- START HEADER ADMIN -->
+                <header class="header-m-oprator">
+                    <span class="back"><img src="./assets/images/back-icon.png"
+                            alt="icon"
+                            /></span>
+                    <div class="title">
+                        <h5>افزودن غذای جدید</h5>
+                    </div>
+                    <div class="The-dividing-line"></div>
+                </header>
+                <!-- END HEADER ADMIN -->
+
+                <section class="input-category">
+                    <!-- input-category-food -->
+                    <div id="row">
+                        <form id="add-new-food">
+                            <div class="content-input">
+                                <div class="col-6 col-md-3 px-2
+                                    item-add-new-food">
+                                    <span class="title-input">نام رستوران</span>
+                                    <input
+                                        type="text"
+                                        name="value-gram"
+                                        id="value-gram"
+                                        />
+                                </div>
+                                <div class="col-6 col-md-3 px-2
+                                    item-add-new-food">
+                                    <span class="title-input">مدیریت </span>
+                                    <input
+                                        type="text"
+                                        name="value-gram"
+                                        id="value-gram"
+                                        />
+                                </div>
+                                <div class="col-12 col-md-6 px-2
+                                    item-add-new-food">
+                                    <span class="title-input">آدرس</span>
+
+                                    <input
+                                        type="text"
+                                        name="value-gram"
+                                        id="value-gram"
+                                        />
+                                </div>
+
+                            </div>
+                        </form>
+
+                    </div>
+                </section>
+                <div class="title-resturant-menu">منوی رستوران</div>
+                <section class="resturant-menu">
+                    <div class=" col-12 col-md-4">
+                        <div class="resturant-menu-image">
+                            <img src="./assets/images/منوی-رستوران-ایرانی.png" alt="" >
+                        </div>
+                        
+                    </div>
+                </section>
+
+               
+            </main>
+            
+
+
+        </div>
+        <div class="btnnahayisabt">
+            <div class="btnsabttaghirat">
+                <span>ثبت تغییرات</span>
+            </div>
+            <div class="diviler-up"></div>
+        </div>
+        <script src="../assets/js/admin/add-food.js"></script>
+    </body>
+</html>

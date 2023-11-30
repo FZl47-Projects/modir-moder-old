@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>گفتگو</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="./assets/vendors/bootstrap.min.css" />
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="./assets/vendors/swiper.css" />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./assets/styles/chat.css" />
+
+    <!-- AXIOS PACKAGE -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body class=" bg">
+   <!-- START MENU-FIXED-RIGHT -->
+   <nav class="menu-fixed-right col-2 ">
+    <div class="inner-menu-fixed-right">
+      <div class="up-menu">
+        <div class="profile">
+          <img src="./assets/images/profile2.png" alt="">
+          <div class="Profile details">
+            <div class="name">
+              مجید رضایی
+            </div>
+            <div class="city">
+              کرمان
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="content-menu">
+        <ul class="list">
+          <li class="item-menu">
+            <a href="./index.html" >
+              <span
+                ><img
+                  src="./assets/images/icon/home-d.png"
+                  alt="icon-menu"
+              /></span>
+              <span>خانه </span>
+              
+            </a>
+          </li>
+          <li class="item-menu">
+            <a href="./instruction.html">
+              <span
+                ><img
+                  src="./assets/images/icon/article-d.png"
+                  alt="icon-menu"
+              /></span>
+              <span>آموزش ها</span>
+              
+            </a>
+          </li>
+         
+     
+          <li class="item-menu">
+            <a href="./chat.html" class="active">
+              <span
+                ><img
+                  src="./assets/images/icon/academy-d.png"
+                  alt="icon-menu"
+              /></span>
+              <span>آکادمی</span>
+              
+            </a>
+          </li>
+          <li class="item-menu">
+            <a href="./profile.html">
+              <span
+                ><img
+                  src="./assets/images/account.png"
+                  alt="icon-menu"
+              /></span>
+              <span>پروفایل</span>
+            </a>
+          </li>
+           
+          <li class="item-menu">
+            <a href="./kharid-eshterak.html">
+              <span
+                ><img
+                  src="./assets/images/icon/-dخرید اشتراک.png"
+                  alt="icon-menu"
+              /></span>
+              <span>خرید اشتراک</span>
+              
+            </a>
+          </li>
+
+          <li class="item-menu">
+            <a href="./Raw-material.html">
+              <span
+                ><img
+                  src="./assets/images/icon/مواد اولیهx.png"
+                  alt="icon-menu"
+              /></span>
+              <span>مواد اولیه</span>
+              
+            </a>
+          </li>
+          <li class="item-menu">
+            <a href="./cost-control-menu.html">
+              <span
+                ><img
+                  src="./assets/images/icon/فرم مهندسی-d.png"
+                  alt="icon-menu"
+              /></span>
+              <span>فرم مهندسی منو</span>
+              
+            </a>
+          </li>
+          <li class="item-menu">
+            <a href="./foods.html">
+              <span
+                ><img
+                  src="./assets/images/icon/food-d.png"
+                  alt="icon-menu"
+              /></span>
+               <span> رسپی غذاها</span>
+              
+            </a>
+          </li>
+          <li class="item-menu">
+            <a href="./Preparations.html">
+              <span
+                ><img
+                  src="./assets/images/g.png"
+                  alt="icon-menu"
+              /></span>
+               <span> آماده سازی ها  </span>
+              
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="down-menu">
+        <div>
+          <img src="./assets/images/Group 2474.png" alt="">
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="call">
+    <div class="inner-call">
+      <div class="social-media" >
+        <div class="etelaeiyeh">صفحه چت بزودی فعال میشود</div>
+        <div class="telegram">
+          <span>شماره تماس:</span>
+          <span><a href="tel:09198910694">09198910694</a></span>
+        </div>
+        <div class="instagram">
+          <span>اینستاگرام:</span>
+          <span class="instagram"><a href="https://Instagram.com/modiremodern.ir">modiremodern.ir</a></span>
+        </div>
+        <div class="telegram">
+          <span>تلگرام:</span>
+          <span class="telegram"><a href="https://t.me/@ModireModern2">@ModireModern2</a></span>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+  <!-- END MENU-FIXED-RIGHT -->
+    <!-- START MENU-BOTTOM -->
+    <div class="menu-bottom">
+      <ul class="list-bottom">
+        <li class="item-menu">
+          <a href="index.html">
+            <span><img
+                src="./assets/images/icon/home.png"
+                alt="icon-menu"
+                /></span>
+          </a>
+        </li>
+        <li class="item-menu">
+          <a href="instruction.html">
+            <span><img
+                src="./assets/images/icon/article.png"
+                alt="icon-menu"
+                /></span>
+          </a>
+        </li>
+        <li class="item-menu">
+          <a href="chat.html">
+            <span><img
+                src="./assets/images/icon/academy.png"
+                alt="icon-menu"
+                /></span>
+          </a>
+        </li>
+        <li class="item-menu">
+          <a href="foods.html">
+            <span><img
+                src="./assets/images/icon/food.png"
+                alt="icon-menu"
+                /></span>
+          </a>
+        </li>
+        <li class="item-menu">
+          <a href="profile.html">
+            <span><img
+                src="./assets/images/icon/account.png"
+                alt="icon-menu"
+                /></span>
+          </a>
+        </li>
+        <li class="item-menu">
+          <a href="kharid-eshterak.html">
+            <span><img
+                src="./assets/images/icon/خرید اشتراک.png"
+                alt="icon-menu"
+                /></span>
+          </a>
+        </li>
+        <li class="item-menu">
+          <a href="Staff-salaries.html">
+            <span><img
+                src="./assets/images/icon/حقوق کارکنان.png"
+                alt="icon-menu"
+                /></span>
+          </a>
+        </li>
+        <li class="item-menu">
+          <a href="cost-control-menu.html">
+            <span><img
+                src="./assets/images/icon/فرم مهندسی.png"
+                alt="icon-menu"
+                /></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- END MENU-BOTTOM -->
+    <div class="container-fluid col-md-10">
+      <main class="main">
+        <section class="title-gg" style="z-index:-5;">
+
+          <span style="z-index: 5;">انجمن ها</span>
+        </section>
+
+
+          <section class="category">
+            <!-- message-user -->
+            <div class="message">
+                <div class="message-content col-6 col-md-3">
+                سلام
+                </div>
+                <div class="user">
+                  <span><img src="./assets/images/small-user.png" alt="">
+                    <div class="name-user">username</div>
+                  </span>
+                </div>
+           </div>
+            <!-- message-user -->
+           
+          
+         <!-- message-answer-modir -->
+           <div class="message-answer">
+            <div class="user">
+              <span><img src="./assets/images/small-user.png" alt="">
+                <div class="name-user">username</div>
+              </span>
+            </div>
+            <div class="message-content-answer col-6 col-md-3">
+                 سلام ،وقت شما بخیر در خدمتتون هستم         
+            </div>
+           </div>
+           <!-- message-answer-modir -->
+
+
+           <div class="message">
+            <div class="message-content col-6 col-md-3">
+             راجع به فرم مهندسی منو سوال داشتم
+            </div>
+            <div class="user">
+              <span><img src="./assets/images/small-user.png" alt="">
+                <div class="name-user">username</div>
+              </span>
+            </div>
+           </div>
+           <div class="message">
+        <div class="message-content col-6 col-md-3">
+          برآورد هزینه های ماهیانه رو خیلی خوب پشتیبانی میکنه
+        </div>
+        <div class="user">
+          <span><img src="./assets/images/small-user.png" alt="">
+            <div class="name-user">username</div>
+          </span>
+        </div>
+           </div>
+           <!-- message-user -->
+           <div class="message-answer">
+        <div class="user">
+          <span><img src="./assets/images/small-user.png" alt="">
+            <div class="name-user">username</div>
+          </span>
+        </div>
+        <div class="message-content-answer col-6 col-md-3">
+          بله در خدمتتون هستم    
+        </div>
+        <div class="input-send-message">njnj</div>
+            </div>
+             <!-- message-user -->
+
+             <!-- imput and btn-send-messege -->
+             <div class="input-send-message">
+             <input type="text" placeholder="متنی را وارد کنید..">
+            <div class="btn-send" style="padding-right:10px;"><img src="./assets/images/btnsend.png" alt=""></div>
+            </div>
+
+           </div>
+  
+          </section>
+
+         
+          
+
+      </main>
+     
+    </div>
+    <!-- js -->
+    
+    <script src="./assets/js/chat.js"></script>
+  </body>
+</html>

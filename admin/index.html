@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home-admin</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="../assets/vendors/bootstrap.min.css" />
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="../assets/vendors/swiper.css" />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../assets/styles/home-admin.css" />
+
+    <!-- AXIOS PACKAGE -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body class="bg">
+    <div class="container-fluid container-admin">
+      <!-- START MENU-MOBILE -->
+      <div class="menu-admin">
+        <div class="overlay-menu-mobile"></div>
+        <div class="inner-menu-mobile">
+          <ul class="list-menu-mobile">
+            <li class="">
+              <a href="./articles.html" class="active">
+                <span>مقالات</span>
+              </a>
+            </li>
+            <li class="">
+              <a href="./admin.html">
+                <span>دسترسی های ادمین</span>
+              </a>
+            </li>
+            <li class="">
+              <a href="./list-karbaran.html">
+                <span>لیست همه کاربران</span>
+              </a>
+            </li>
+            <li class="">
+              <a href="./kharid-eshterak-admin.html">
+                <span>خرید اشتراک</span>
+              </a>
+            </li>
+            <li class="">
+              <a href="./list-moshavereh.html">
+                <span>لیست مشاوره ها</span>
+              </a>
+            </li>
+            <li class="">
+              <a href="./tickets.html">
+                <span>تیکت ها</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- END MENU-MOBILE -->
+      <!-- START MAIN -->
+      <main class="main-admin">
+        <!-- START HEADER ADMIN -->
+        <header
+          class="header-m-oprator d-flex justify-content-end align-items-center">
+          <span class="hamburger-menu-admin" id="hamburger"><img
+              src="../assets/images/hamberger-icon-w.png" alt="icon"
+              /></span>
+        </header>
+        <!-- END HEADER ADMIN -->
+
+        <div class="content-main-admin">
+          <!-- START CONTENT sale -->
+          <section class="content-home">
+
+            <!-- start modal-ticket -->
+            <div class="content-modal modal-ticket">
+              <div class="inner-modal">
+                <form class="px-4 pt-2">
+                  <div class="py-2">
+                    <div class="name">jhghj</div>
+                    <div class="title">nbvbhnj</div>
+                    <textarea
+                      name="modal"
+                      class="input-modal"
+                      cols="30"
+                      rows="7"
+                      placeholder="پاسخ تیکت"></textarea>
+                  </div>
+                  <div class="btns-modal">
+                    <div class="btn-modal col-6">
+                      <span class="btn-send-modal" onclick="sendTicket(5)">ارسال</span>
+                    </div>
+                    <div class="btn-modal close-modal-adamtaeid col-6">
+                      <span>لغو</span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- end modal-ticket -->
+
+            <!-- start modal-ticket -->
+            <div class="content-modal modal-edit-information-user">
+              <div class="inner-modal">
+                <div class="content px-4 pt-2">
+                  <div class="up-modal">
+                    <div class="col-4 img-up-modal">
+                      <img src="../assets/images/profile2.png"
+                        alt="">
+                    </div>
+                    <div class="col-8">
+                      <div class="Specifications">
+                        <div class="name">${item.name} </div>
+                        <div class="city">${item.city} </div>
+                      </div>
+                    </div>
+                  </div>
+                  <form class="px-4 pt-2">
+                    <div class="form-group">
+                      <label for="value-gram">شماره تلفن</label>
+                      <input
+                        type="tell"
+                        dir="ltr"
+                        name="value-gram"
+                        id="value-gram"
+                        value="${item.phone_number}"
+                        />
+                      <small></small>
+                    </div>
+                    <div class="form-group">
+                      <label for="price" style="width:50%;">رمز عبور</label>
+                      <input class="price"
+                        type="password"
+                        name="phone-number"
+                        id="btnEdit"
+                        placeholder="password"
+                        />
+                      <span class="btn-edit">ویرایش</span>
+                      <small></small>
+                    </div>
+                    <div class="form-group">
+                      <label for="price" style="width:50%;">نام رستوران</label>
+                      <input class="price"
+                        type="text"
+                        name="phone-number"
+                        id="btnEdit"
+                        value="${item.restaurantName}"
+                        />
+                      <small></small>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- end modal-ticket -->
+
+
+             <!-- start modal-Consultation-requests -->
+    <div class="content-modal modal-Consultation-requests">
+      <div class="inner-modal">
+        <form class="px-4 pt-2">
+          <div class="py-2">
+            <div class="up-modal-request">
+              <div class="name">مجید رضایی</div>
+              <div class="date">1377/8/2</div>
+              </div>
+          </div>
+          <div class="down-modal-request">
+            <div class="phone-number" style="color:
+              #fff;">
+             09139874983
+            </div>
+            <div class="title-Consultation-requests" style="color:
+              #fff;">
+              اصول رستورانداری
+            </div>
+            
+            <div class="description-Consultation" style="color: #fff;">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+              و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+              روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
+              شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف
+              بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
+              درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
+              طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
+              ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی
+              ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
+              موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و
+              زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی
+              سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده
+              قرار گیرد.
+            </div>
+          </div>
+          <div class="btn-modal">
+            <div class="btn-modal col-6">
+              <span class="btn-taeid-modal">تایید</span>
+            </div>
+          </div>
+        </form>
+      </div>
+      
+    </div>
+    <!-- end modal-Consultation-requests -->
+     <!-- start modal-Consultation-requests -->
+     <div class="content-modal modal-Consultation-requests">
+      <div class="inner-modal">
+        <form class="px-4 pt-2">
+          <div class="py-2">
+            <div class="up-modal-request">
+              <div class="name">مجید رضایی</div>
+              <div class="date">1377/8/2</div>
+              </div>
+          </div>
+          <div class="down-modal-request">
+            <div class="phone-number" style="color:
+              #fff;">
+             09139874983
+            </div>
+            <div class="title-Consultation-requests" style="color:
+              #fff;">
+              اصول رستورانداری
+            </div>
+            
+            <div class="description-Consultation" style="color: #fff;">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+              و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+              روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
+              شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف
+              بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
+              درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
+              طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
+              ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی
+              ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
+              موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و
+              زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی
+              سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده
+              قرار گیرد.
+            </div>
+          </div>
+          <div class="btn-modal">
+            <div class="btn-modal col-6">
+              <span class="btn-taeid-modal">تایید</span>
+            </div>
+          </div>
+        </form>
+      </div>
+      
+    </div>
+    <!-- end modal-Consultation-requests -->
+     <!-- start modal-Consultation-requests -->
+     <div class="content-modal modal-Consultation-requests">
+      <div class="inner-modal">
+        <form class="px-4 pt-2">
+          <div class="py-2">
+            <div class="up-modal-request">
+              <div class="name">مجید رضایی</div>
+              <div class="date">1377/8/2</div>
+              </div>
+          </div>
+          <div class="down-modal-request">
+            <div class="phone-number" style="color:
+              #fff;">
+             09139874983
+            </div>
+            <div class="title-Consultation-requests" style="color:
+              #fff;">
+              اصول رستورانداری
+            </div>
+            
+            <div class="description-Consultation" style="color: #fff;">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+              و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+              روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
+              شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف
+              بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
+              درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
+              طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
+              ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی
+              ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
+              موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و
+              زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی
+              سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده
+              قرار گیرد.
+            </div>
+          </div>
+          <div class="btn-modal">
+            <div class="btn-modal col-6">
+              <span class="btn-taeid-modal">تایید</span>
+            </div>
+          </div>
+        </form>
+      </div>
+      
+    </div>
+    <!-- end modal-Consultation-requests -->
+
+
+            <!-- ----------------------------اسلایدر درخواست مشاوره----------------------------- -->
+            <div class="list-content list-tickets col-12">
+              <div
+                class="title d-flex justify-content-start align-items-center">
+                <span class="title-list">درخواست های مشاوره</span>
+                <a href="#" class="link-list d-inline-block mx-4">مشاهده همه</a>
+              </div>
+
+              <div class="swiper swiper-gh mt-3" id="ghateh">
+                <div class="swiper-wrapper" id="counseling">
+
+            
+
+
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+
+
+            <!-- ---------------------------اسلایدر تیکت ها------------------------------ -->
+            <div class="list-content list-ticket col-12">
+
+              <div
+                class="title d-flex justify-content-start align-items-center">
+                <span class="title-list">تیکت ها</span>
+                <a href="#" class="link-list d-inline-block mx-4">مشاهده همه</a>
+              </div>
+              <div class="modals" id="modals-ticket">
+
+
+              </div>
+              <div class="swiper swiper-ticket mt-3" id="swiper-ticket">
+                <div class="swiper-wrapper" id="tickets">
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+            <!-- --------------------------------------------------------- -->
+            <!-- -----------------------------اسلایدر کاربران---------------------------- -->
+            <div class="list-content list-karbaran col-12">
+              <div
+                class="title d-flex justify-content-start align-items-center">
+                <span class="title-list">لیست کاربران</span>
+                <a href="list-users.html" class="link-list d-inline-block mx-4">مشاهده
+                  همه</a>
+              </div>
+
+              <div class="swiper swiper-karbar mt-3" id="karbar">
+                <div class="swiper-wrapper" id="karbaran">
+                  <div class="swiper-slide">
+                    <div class="item-list-1 item-list-karbaran">
+                      <div class="up p-2">
+                        <div class="content-item-o-p">
+                          <div class="right col-12">
+                            <div class="title-s">
+                              <span class="date"><img
+                                  src="../assets/images/profile2.png" alt=""></span>
+                              <div>
+                                <span>مجید رضایی</span>
+                                <div class="des">
+                                  <span>09123456789</span>
+                                </div>
+                              </div>
+
+
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="information" id="information-user">اطلاعات
+                        بیشتر</div>
+                    </div>
+                  </div>
+                  <!-- START SLIDE -->
+                  <div class="swiper-slide">
+                    <div class="item-list-1 item-list-karbaran">
+                      <div class="up p-2">
+                        <div class="content-item-o-p">
+                          <div class="right col-12">
+                            <div class="title-s">
+                              <span class="date"><img
+                                  src="../assets/images/profile2.png" alt=""></span>
+                              <div>
+                                <span>مجید رضایی</span>
+                                <div class="des">
+                                  <span>09123456789</span>
+                                </div>
+                              </div>
+
+
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="information" id="information-user">اطلاعات
+                        بیشتر</div>
+                    </div>
+                  </div>
+                  <!-- START SLIDE -->
+                  <div class="swiper-slide">
+                    <div class="item-list-1 item-list-karbaran">
+                      <div class="up p-2">
+                        <div class="content-item-o-p">
+                          <div class="right col-12">
+                            <div class="title-s">
+                              <span class="date"><img
+                                  src="../assets/images/profile2.png" alt=""></span>
+                              <div>
+                                <span>مجید رضایی</span>
+                                <div class="des">
+                                  <span>09123456789</span>
+                                </div>
+                              </div>
+
+
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="information" id="information-user">اطلاعات
+                        بیشتر</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="item-list-1 item-list-karbaran">
+                      <div class="up p-2">
+                        <div class="content-item-o-p">
+                          <div class="right col-12">
+                            <div class="title-s">
+                              <span class="date"><img
+                                  src="../assets/images/profile2.png" alt=""></span>
+                              <div>
+                                <span>مجید رضایی</span>
+                                <div class="des">
+                                  <span>09123456789</span>
+                                </div>
+                              </div>
+
+
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="information" id="information-user">اطلاعات
+                        بیشتر</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="item-list-1 item-list-karbaran">
+                      <div class="up p-2">
+                        <div class="content-item-o-p">
+                          <div class="right col-12">
+                            <div class="title-s">
+                              <span class="date"><img
+                                  src="../assets/images/profile2.png" alt=""></span>
+                              <div>
+                                <span>مجید رضایی</span>
+                                <div class="des">
+                                  <span>09123456789</span>
+                                </div>
+                              </div>
+
+
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="information" id="information-user">اطلاعات
+                        بیشتر</div>
+                    </div>
+                  </div>
+
+
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <!-- --------------------------------------------------------- -->
+            <div class="col-12 col-4 categoryphome-admin">
+
+              <a class="col-12 p-3"  href="./list-moshavereh.html">
+                <div class="articles categoryphome-admin-item">
+                  <span><img src="../assets/images/bok.png" alt=""></span>
+                  <span>مقالات</span>
+                </div>
+              </a>
+            </div>
+
+          </section>
+          <!-- END CONTENT -->
+          <a href="#">
+            <div class="pakege-btn">
+              <span>پکیج ها</span>
+              <span><img src="../assets/images/back-icon.png" alt=""></span>
+            </div>
+          </div>
+        </a>
+
+      </main>
+      <!-- START MAIN -->
+    </div>
+
+    <!--BOOTSTRAP -->
+    <script src="../assets/vendors/bootstrap.min.js"></script>
+
+    <!-- SWIPER -->
+    <script src="../assets/vendors/swiper.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="../assets/js/admin/sliderHome.js"></script>
+    <script type="module" src="../assets/js/admin/home-admin.js"></script>
+  </body>
+</html>

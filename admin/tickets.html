@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تیکت ها - ادمین</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="../assets/vendors/bootstrap.min.css" />
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="../assets/vendors/swiper.css" />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../assets/styles/tickets-admin.css" />
+    <!-- AXIOS PACKAGE -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body class="bg">
+    <div class="container-fluid container-admin">
+      <!-- START MAIN -->
+      <main class="main-admin">
+        <header class="header-m-oprator">
+          <span class="back"
+            ><img src="../assets/images/back-icon.png" alt="icon"
+          /></span>
+          <div class="title">
+            <h5>تیکت ها</h5>
+          </div>
+        </header>
+
+        <div class="content-main-admin">
+          <!-- START BTNS  -->
+          <div class="btns">
+            <div class="btn-change col-6 text-center active">تیکت های جدید</div>
+            <div class="btn-change col-6 text-center">همه تیکت ها</div>
+          </div>
+          <!-- END BTNS -->
+
+          <!-- START CONTENT-ITMES   -->
+          <section class="content-items">
+            <div class="items-content new active" id="row-new">
+              
+            </div>
+            
+
+            <!-- ----------------------------------- -->
+            <div class="items-content old">
+              <!-- START CONTENT  -->
+              <section class="content-items w-100">
+                <div class="items-ersal w-100 d-flex flex-wrap" id="row-all">
+                 
+                 
+                </div>
+              </section>
+              <!-- END CONTENT -->
+            </div>
+          </section>
+          <!-- END CONTENT-ITMES   -->
+        </div>
+      </main>
+      <!-- START MAIN -->
+    </div>
+
+    <!--BOOTSTRAP -->
+    <script src="../assets/vendors/bootstrap.min.js"></script>
+
+    <!-- SWIPER -->
+    <script src="../assets/vendors/swiper.js"></script>
+    <!-- SWEETALERT PACKAGE -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- MAIN JS -->
+    <script type="module" src="../assets/js/admin/tickets.js"></script>
+    <script type="module" src="../assets/js/back.js"></script>
+
+  </body>
+</html>

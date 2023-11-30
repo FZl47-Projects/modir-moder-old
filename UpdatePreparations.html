@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>آماده سازی</title>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <!-- BOOTSTRAP -->
+        <link rel="stylesheet" href="./assets/vendors/bootstrap.min.css" />
+
+        <!-- SWIPER -->
+        <link rel="stylesheet" href="./assets/vendors/swiper.css" />
+
+        <!-- MAIN CSS -->
+        <link rel="stylesheet" href="./assets/styles/amadehsazi.css" />
+        <link rel="stylesheet" href="./assets/styles/add-food.css" />
+
+        <!-- AXIOS PACKAGE -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </head>
+
+    <body class="bg">
+        <div class="container-fluid container-admin">
+            <!-- START MAIN -->
+            <main class="main-admin">
+                <!-- START HEADER ADMIN -->
+                                <!-- start modal-add-material-category -->
+                                <div class="content-modal modal-material-category">
+                                    <div class="inner-modal">
+                                      <form class="px-4 pt-2">
+                                        <div class="py-2">
+                                          <div class="add-material-category">
+                                              <div class="item-material">
+                                                  <label for="" class="title">نام</label>
+                                                  <input list="select" id="name">
+                                                  <datalist  id="select">
+                                                   
+                                                </datalist>
+                                              </div>
+                                              <div class="item-material">
+                                                <label for="" class="title" >کیلوگرم/عدد</label>
+                                                <input type="text" id="values">
+                                              </div>
+                    
+                                            <div class="btn-sabt btn-send-modal">
+                                            <div>ثبت</div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </form>
+                                    </div>
+                                    </div>
+                                    <!-- start modal-add-material-category -->
+                <header class="header-m-oprator">
+                    <span class="back"><img src="./assets/images/back-icon.png"
+                            alt="icon"
+                            /></span>
+                    <div class="title">
+                        <h5>آماده سازی</h5>
+                    </div>
+                    <div class="The-dividing-line"></div>
+                </header>
+                <!-- END HEADER ADMIN -->
+
+
+                <div class="content-main-admin">
+                    <section class="contentt">
+                        <div class="title-food">
+                            <span>رسپی:</span>
+                            <span id="foodName"></span>
+                        </div>
+                       <!-- title table -->
+                       
+                                <div class="row-title">
+                                    <div class="item-mavadghazaei col-12">
+                                        <div class="col-2 border-c name-mavad">
+                                           <span style="text-align: center;">نام</span>
+                                        </div>
+                                        <div class="col-3 border-c meghdar-mavad">
+                                            <span style="text-align: center;" >مقدار(کیلو گرم)</span>
+                                        </div>
+                                        <div class="col-3 border-c meghdar-mavad">
+                                            <span style="text-align: center;">قیمت (تومان)</span>
+                                        </div>
+                                        <div class="col-3 border-c meghdar-mavad">
+                                           <span style="text-align: center;">جمع کل</span>
+                                        </div>
+                                        <div class="col-1">
+                                           
+                                         </div>
+                                    </div>
+        
+                                </div>
+                        
+                        <!-- title table -->
+                        <!-- start-row-table -->
+                        <div id="row">
+                        </div>
+                        
+                        <!-- start-row-table -->
+                        
+                        
+                        
+                    
+                        <!-- btn-add- -->
+                        <div class="add-mavad-ghazaei" id="add">
+                            <span>
+                                +
+                            </span>
+                        </div>
+                        <!-- btn-add- -->
+
+                    </section>
+
+                    <!-- marhaleh amadehsazi -->
+                    <section class="marahele-amadesazi" style="padding: 10px;">
+                        <div class="title" style="border: 1px solid #fff; color: #fff;">مراحل آماده سازی</div>
+                        <div class="description " style="border: 1px solid #fff; color: #fff;">
+                            <textarea
+                            name="des"
+                            id="des-request"
+                            cols="30"
+                            rows="10"
+                            class="p-3 text-light"
+                            placeholder="توضیحات خود را بنویسید"
+                          ></textarea>
+                        </div>
+                    </section>  
+
+                     <!-- avrage items -->
+                     <div class="Average col-12 col-md-4">
+                        <div class="Average-item col-12">
+                          <div class="col-6 title">جمع کل بهای تمام شده</div>
+                          <div class="col-6 moment" id="priceAll"></div>
+                        </div>
+
+
+                      <!-- avrage items -->
+                     <!-- marhaleh amadehsazi -->
+                   <!-- upload image -->
+                    <div class="upload-image">
+                        <span class="inner-upload">
+                            <label for="javaz" class="label-apload"style="width:
+                            200px;">
+                             <img id="imageFood" src="./assets/images/photo.png" alt="">
+                        </label>
+                        <input type="file" name="javaz" id="javaz"
+                        hidden />
+                       
+                        </span>
+                    </div>
+                    <!-- upload image -->
+
+                     <!-- btn sabt -->
+                    <div class="btnnahayisabt" id="edit">
+                        <div class="btnsabttaghirat">
+                            <span>ثبت تغییرات</span>
+                        </div>
+                        <div class="diviler-up"></div>
+                    </div>
+                    <!-- btn sabt -->
+                    
+                </main>
+                <!-- START MAIN -->
+            </div>
+
+            <!--BOOTSTRAP -->
+            <script src="../assets/vendors/bootstrap.min.js"></script>
+
+
+
+            <!-- MAIN JS -->
+            <script src="./assets/js/UpdatePreparations.js" type="module"></script>
+            <script type="module" src="./assets/js/back.js" type="module"></script>
+        </body>
+    </html>

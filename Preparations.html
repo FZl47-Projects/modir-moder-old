@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>غذاها</title>
+    <!-- BOOTSTRAP -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./assets/vendors/bootstrap.min.css" />
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="./assets/vendors/swiper.css" />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./assets/styles/foods.css" />
+
+    <!-- AXIOS PACKAGE -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body class="bg">
+<!-- START MENU-FIXED-RIGHT -->
+<nav class="menu-fixed-right col-2 ">
+  <div class="inner-menu-fixed-right">
+    <div class="up-menu">
+      <div class="profile">
+        <img src="./assets/images/profile2.png" alt="">
+        <div class="Profile details">
+          <div class="name">
+            مجید رضایی
+          </div>
+          <div class="city">
+            کرمان
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="content-menu">
+      <ul class="list">
+        <li class="item-menu">
+          <a href="./index.html" >
+            <span
+              ><img
+                src="./assets/images/icon/home-d.png"
+                alt="icon-menu"
+            /></span>
+            <span>خانه </span>
+            
+          </a>
+        </li>
+        <li class="item-menu">
+          <a href="./instruction.html">
+            <span
+              ><img
+                src="./assets/images/icon/article-d.png"
+                alt="icon-menu"
+            /></span>
+            <span>آموزش ها</span>
+            
+          </a>
+        </li>
+       
+   
+        <li class="item-menu">
+          <a href="./chat.html">
+            <span
+              ><img
+                src="./assets/images/icon/academy-d.png"
+                alt="icon-menu"
+            /></span>
+            <span>آکادمی</span>
+            
+          </a>
+        </li>
+        <li class="item-menu">
+          <a href="./profile.html">
+            <span
+              ><img
+                src="./assets/images/account.png"
+                alt="icon-menu"
+            /></span>
+            <span>پروفایل</span>
+          </a>
+        </li>
+         
+        <li class="item-menu">
+          <a href="./kharid-eshterak.html">
+            <span
+              ><img
+                src="./assets/images/icon/-dخرید اشتراک.png"
+                alt="icon-menu"
+            /></span>
+            <span>خرید اشتراک</span>
+            
+          </a>
+        </li>
+
+        <li class="item-menu">
+          <a href="./Raw-material.html">
+            <span
+              ><img
+                src="./assets/images/icon/مواد اولیهx.png"
+                alt="icon-menu"
+            /></span>
+            <span>مواد اولیه</span>
+            
+          </a>
+        </li>
+
+        <li class="item-menu">
+          <a href="./foods.html">
+            <span
+              ><img
+                src="./assets/images/icon/food-d.png"
+                alt="icon-menu"
+            /></span>
+             <span> رسپی غذاها</span>
+            
+          </a>
+        </li>
+        <li class="item-menu">
+          <a href="./Preparations.html" class="active">
+            <span
+              ><img
+                src="./assets/images/g.png"
+                alt="icon-menu"
+            /></span>
+             <span> آماده سازی ها  </span>
+            
+          </a>
+        </li>
+        <li class="item-menu">
+          <a href="./cost-control-menu.html">
+            <span
+              ><img
+                src="./assets/images/icon/فرم مهندسی-d.png"
+                alt="icon-menu"
+            /></span>
+            <span>فرم مهندسی منو</span>
+            
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="down-menu">
+      <div>
+        <img src="./assets/images/Group 2474.png" alt="">
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- END MENU-FIXED-RIGHT -->
+    <div class="container-fluid col-md-10" >
+      <main class="main-admin-food" style="padding-bottom:120px;">
+        <section class="food-category">
+          <a href="./Raw-material.html">
+            <div class="btn-add m-2">
+              <div class="title-add">
+                <div style="color:#FED304 ;">مواد اولیه</div>
+              </div>
+              <a href="./index.html" class="img-add"><img
+                  src="./assets/images/back-yelow.png"
+                  alt="icon"
+                  /></a>
+
+            </div>
+          </a>
+          
+          <div class="add-menu">
+            اضافه کردن منو
+            <span><img src="./assets/images/upload.png" alt=""></span>
+          </div>
+          <div class="row g-0" id="row">
+        </div>
+
+
+        <div class="print col-12 col-md-6 " onclick="window.print()">
+          <div class="col-10 print-item-content">
+            <div class="print-item">پرینت صفحه </div>
+       
+          </div>
+          <div class="col-1 print-image"><img src="./assets/images/print.png" alt=""></div>
+        </div>
+                
+         </section>
+         <div class="btnnahayi" style="width : calc(100% - 237.5px)">
+          <a href="./addPreparations.html">
+            <div class="btn-addd">
+              <div class="title-add">
+                <div class="icon-upload"><img
+                    src="./assets/images/upload.png" alt=""></div>
+                <div style="color: #FED304; font-size:16px">افزودن غذا</div>
+              </div>
+              
+
+            </div>
+        </div>
+        </main>
+
+    </div>
+          <!-- SWIPER -->
+
+          <script src="./assets/js/Preparations.js" type="module"></script>
+          <script type="module" src="./assets/js/back.js"></script>
+        </body>
+      </html>

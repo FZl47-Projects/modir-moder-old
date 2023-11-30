@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>لیست خرید هفتگی</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="./assets/vendors/bootstrap.min.css" />
+
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./assets/styles/list-kharid-admin.css" />
+    <!-- AXIOS PACKAGE -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body class="bg">
+    <div class="container-fluid container-admin">
+      <!-- START MAIN -->
+      <main class="main-admin">
+        <!-- START HEADER ADMIN -->
+        <header class="header-m-oprator">
+          <span class="back"><img src="./assets/images/back-icon.png"
+                  alt="icon"
+                  /></span>
+          <div class="title">
+              <h5>لیست خرید هفتگی</h5>
+          </div>
+          <div class="The-dividing-line"></div>
+         </header>
+      <!-- END HEADER ADMIN -->
+        <div class="content-main-admin">
+          <section class="contentt">
+            <div class="content-hazineh">
+              <div class="row">
+
+                <div class="title-row col-11">
+                  <div class="col-4">مواد غذایی</div>
+                  <div class="col-4">مقدار </div>
+                  <div class="col-4">قیمت </div>
+                </div>
+                <div class="month col-1">
+
+                </div>
+              </div>
+              <!-- start item-listkharid -->
+              <div class="row">
+                <div class="item-hazineh col-11">
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;" placeholder="برنج">
+                  </div>
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;" placeholder="100کیلوگرم">
+                  </div>
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;" placeholder="2000000">
+                  </div>
+                </div>
+                <div class="month col-1 px-2">
+                  <input type="checkbox" id="test"> <label for="test"></label>
+                </div>
+              </div>
+               <!-- start item-listkharid -->
+              <div class="row">
+
+                <div class="item-hazineh col-11">
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;">
+                  </div>
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;">
+                  </div>
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;">
+                  </div>
+                </div>
+                <div class="month col-1 px-2">
+                  <input type="checkbox" class="my-cheked">
+                </div>
+              </div>
+              <div class="row">
+
+                <div class="item-hazineh col-11">
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;">
+                  </div>
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;">
+                  </div>
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;">
+                  </div>
+                </div>
+                <div class="month col-1 px-2">
+                  <input type="checkbox" class="my-cheked">
+                </div>
+              </div>
+              <div class="row">
+
+                <div class="item-hazineh col-11">
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;">
+                  </div>
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;">
+                  </div>
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;">
+                  </div>
+                </div>
+                <div class="month col-1 px-2">
+                  <input type="checkbox" class="my-cheked">
+                </div>
+              </div>
+              <div class="row">
+
+                <div class="item-hazineh col-11">
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;">
+                  </div>
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;">
+                  </div>
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;">
+                  </div>
+                </div>
+                <div class="month col-1 px-2">
+                  <input type="checkbox" class="my-cheked">
+                </div>
+              </div>
+              <div class="row">
+
+                <div class="item-hazineh col-11">
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;">
+                  </div>
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;">
+                  </div>
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;">
+                  </div>
+                </div>
+                <div class="month col-1 px-2">
+                  <input type="checkbox" class="my-cheked">
+                </div>
+              </div>
+              <div class="row">
+
+                <div class="item-hazineh col-11">
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;">
+                  </div>
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;">
+                  </div>
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;">
+                  </div>
+                </div>
+                <div class="month col-1 px-2">
+                  <input type="checkbox" class="my-cheked">
+                </div>
+              </div>
+              <div class="row">
+
+                <div class="item-hazineh col-11">
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;">
+                  </div>
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;">
+                  </div>
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;">
+                  </div>
+                </div>
+                <div class="month col-1 px-2">
+                  <input type="checkbox" class="my-cheked">
+                </div>
+              </div>
+              <div class="row">
+
+                <div class="item-hazineh col-11">
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;">
+                  </div>
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;">
+                  </div>
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;">
+                  </div>
+                </div>
+                <div class="month col-1 px-2">
+                  <input type="checkbox" class="my-cheked">
+                </div>
+              </div>
+              <div class="row">
+
+                <div class="item-hazineh col-11">
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;">
+                  </div>
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;">
+                  </div>
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;">
+                  </div>
+                </div>
+                <div class="month col-1 px-2">
+                  <input type="checkbox" class="my-cheked">
+                </div>
+              </div>
+              <div class="row">
+
+                <div class="item-hazineh col-11">
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;">
+                  </div>
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;">
+                  </div>
+                  <div class="col-4 px-1 py-1">
+                    <input class="ii" type="text" style="width:100%;">
+                  </div>
+                </div>
+                <div class="month col-1 px-2">
+                  <input type="checkbox" class="my-cheked">
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- btn-ghimat-nahayi -->
+          <div class="btnnahayi">
+            <span class="add-btn">+افزودن مواد غذایی</span>
+           </div>
+         </div>
+       <!-- btn-ghimat-nahayi -->
+        </div>
+      </main>
+      <!-- START MAIN -->
+    </div>
+
+    <!--BOOTSTRAP -->
+    <script src="./assets/vendors/bootstrap.min.js"></script>
+
+    <!-- MAIN JS -->
+  </body>
+</html>
